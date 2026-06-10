@@ -79,18 +79,31 @@
       const target = document.querySelector(href);
       if (!target) return;
       e.preventDefault();
-      const top = target.getBoundingClientRect().top + window.scrollY - 70;
+      const offset = 70;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top, behavior: 'smooth' });
     });
   });
 
+  // Stagger delays for grouped cards
+  ['.advantages__grid .adv', '.services__grid .srv', '.works__grid .work-card', '.process__steps .step'].forEach(sel => {
+    document.querySelectorAll(sel).forEach((el, i) => {
+      el.style.transitionDelay = (i * 0.08) + 's';
+    });
+  });
+
   const targets = document.querySelectorAll(
-    '.adv, .srv, .step, .work-card, .contact-card, .faq__item, .form-wrap, .hero__card, .hero__stat'
+    '.adv, .srv, .step, .work-card, .contact-card, .faq__item, .form-wrap, .reveal'
   );
   targets.forEach(el => el.classList.add('reveal'));
   const io = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
   targets.forEach(el => io.observe(el));
 
   const counters = document.querySelectorAll('[data-target]');
@@ -100,7 +113,7 @@
       const el = e.target;
       const target = parseInt(el.dataset.target, 10);
       if (Number.isNaN(target)) return;
-      const dur = 1100, start = performance.now();
+      const dur = 1200, start = performance.now();
       const tick = t => {
         const p = Math.min(1, (t - start) / dur);
         el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));

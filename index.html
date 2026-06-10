@@ -12,6 +12,29 @@
 </head>
 <body>
 
+<!-- ===== TOPBAR ===== -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__meta">
+      <span class="topbar__item">
+        <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><path d="M8 8.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" stroke="currentColor" stroke-width="1.4"/><path d="M8 1C5.24 1 3 3.24 3 6c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5z" stroke="currentColor" stroke-width="1.4"/></svg>
+        Барнаул и Алтайский край
+      </span>
+      <span class="topbar__item">
+        <svg viewBox="0 0 16 16" fill="none" width="12" height="12"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.5v4l2.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        Пн–Сб: 8:00–20:00
+      </span>
+    </div>
+    <div class="topbar__contacts">
+      <a href="tel:+79628132471" class="topbar__link">+7 (962) 813-24-71</a>
+      <a href="https://t.me/m_mexov_v" class="topbar__link" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" fill="currentColor" width="12" height="12"><path d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm3.96 5.46l-1.35 6.35c-.1.44-.36.55-.72.34l-2-.47-1.47 1.41c-.1.1-.2.2-.41.2l.14-2.06 3.76-3.39c.16-.14-.03-.22-.25-.08L4.07 11.08l-1.97-.62c-.43-.13-.44-.43.09-.64l7.73-2.98c.36-.13.68.09.04.62z"/></svg>
+        @m_mexov_v
+      </a>
+    </div>
+  </div>
+</div>
+
 <!-- ===== HEADER ===== -->
 <header class="header" id="header">
   <div class="container header__inner">
@@ -47,29 +70,17 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="hero">
-  <div class="hero__bg"></div>
-  <div class="hero__botanical" aria-hidden="true">
-    <svg viewBox="0 0 400 500" fill="none" preserveAspectRatio="xMidYMid slice">
-      <path d="M320 480 C310 400 290 340 270 290 C250 240 225 210 200 170 C175 130 160 80 140 30" stroke="#5F7453" stroke-width="2" fill="none"/>
-      <path d="M270 290 C255 270 265 245 290 245 C283 265 272 284 270 290Z" stroke="#7E9470" stroke-width="1.5" fill="none"/>
-      <path d="M270 290 C278 272 288 256 290 245" stroke="#7E9470" stroke-width="1" fill="none"/>
-      <path d="M310 370 C288 355 285 330 308 322 C310 343 310 360 310 370Z" stroke="#5F7453" stroke-width="1.5" fill="none"/>
-      <path d="M310 370 C304 350 306 332 308 322" stroke="#5F7453" stroke-width="1" fill="none"/>
-      <path d="M225 210 C208 196 212 172 230 167 C228 185 226 202 225 210Z" stroke="#7E9470" stroke-width="1.5" fill="none"/>
-      <path d="M225 210 C221 192 225 174 230 167" stroke="#7E9470" stroke-width="1" fill="none"/>
-      <path d="M253 255 C270 240 290 250 288 268 C272 270 257 264 253 255Z" stroke="#5F7453" stroke-width="1.5" fill="none"/>
-      <path d="M200 170 C183 155 185 130 204 124 C203 143 201 160 200 170Z" stroke="#7E9470" stroke-width="1.5" fill="none"/>
-      <path d="M200 170 C196 152 198 135 204 124" stroke="#7E9470" stroke-width="1" fill="none"/>
-      <path d="M340 430 C318 416 314 390 338 382 C341 403 341 422 340 430Z" stroke="#7E9470" stroke-width="1.5" fill="none"/>
-    </svg>
+  <div class="hero__photo">
+    <img src="work1.jpg" alt="Пример выполненной работы по благоустройству захоронения">
   </div>
+  <div class="hero__overlay"></div>
   <div class="container hero__inner">
     <div class="hero__content">
       <div class="hero__badge">Барнаул и Алтайский край</div>
       <h1 class="hero__title">Преобразим место памяти<br><em>ваших близких</em></h1>
       <p class="hero__sub">Полный цикл работ по благоустройству захоронений — от укладки плитки до установки памятника. Работаем по договору с гарантией 2 года.</p>
       <div class="hero__cta">
-        <a href="#contact" class="btn btn--accent">Получить бесплатную консультацию</a>
+        <a href="#contact" class="btn btn--accent btn--pulse">Получить бесплатную консультацию</a>
         <a href="tel:+79628132471" class="btn btn--ghost">
           <svg viewBox="0 0 20 20" fill="none" width="18" height="18"><path d="M2 3.5A1.5 1.5 0 013.5 2h.878c.486 0 .916.308 1.079.768l1.046 2.98a1.5 1.5 0 01-.342 1.574L5.07 8.43C6.2 10.42 7.58 11.8 9.57 12.93l1.108-1.09a1.5 1.5 0 011.574-.343l2.98 1.046c.46.162.768.593.768 1.079V15.5A1.5 1.5 0 0114.5 17C7.596 17 2 11.404 2 4.5V3.5z" fill="currentColor"/></svg>
           Позвонить
@@ -124,72 +135,96 @@
       </div>
     </div>
   </div>
+  <a href="#about" class="hero__scroll-hint" aria-label="Прокрутить вниз">
+    <span>Смотреть</span>
+    <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
 </section>
+
+<!-- ===== TICKER ===== -->
+<div class="ticker-strip" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Укладка плитки от 8 500 ₽/кв.м.</span>
+    <span class="ticker__sep">✦</span>
+    <span>Памятники от 24 600 ₽</span>
+    <span class="ticker__sep">✦</span>
+    <span>Гарантия 2 года</span>
+    <span class="ticker__sep">✦</span>
+    <span>500+ выполненных объектов</span>
+    <span class="ticker__sep">✦</span>
+    <span>Работаем по договору</span>
+    <span class="ticker__sep">✦</span>
+    <span>Барнаул и Алтайский край</span>
+    <span class="ticker__sep">✦</span>
+    <span>Мраморная крошка от 650 ₽/пог.м.</span>
+    <span class="ticker__sep">✦</span>
+    <span>Бесплатная консультация</span>
+    <span class="ticker__sep">✦</span>
+    <span>Укладка плитки от 8 500 ₽/кв.м.</span>
+    <span class="ticker__sep">✦</span>
+    <span>Памятники от 24 600 ₽</span>
+    <span class="ticker__sep">✦</span>
+    <span>Гарантия 2 года</span>
+    <span class="ticker__sep">✦</span>
+    <span>500+ выполненных объектов</span>
+    <span class="ticker__sep">✦</span>
+    <span>Работаем по договору</span>
+    <span class="ticker__sep">✦</span>
+    <span>Барнаул и Алтайский край</span>
+    <span class="ticker__sep">✦</span>
+    <span>Мраморная крошка от 650 ₽/пог.м.</span>
+    <span class="ticker__sep">✦</span>
+    <span>Бесплатная консультация</span>
+    <span class="ticker__sep">✦</span>
+  </div>
+</div>
 
 <!-- ===== ПРЕИМУЩЕСТВА ===== -->
 <section class="advantages" id="about">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div class="section-label">Почему выбирают нас</div>
       <h2 class="section-title">Полная ответственность за каждый заказ</h2>
     </div>
     <div class="advantages__grid">
       <div class="adv">
         <div class="adv__icon">
-          <svg viewBox="0 0 32 32" fill="none" width="26" height="26">
-            <path d="M16 4L6 9v6.5c0 6.5 4.2 12.6 10 14.5 5.8-1.9 10-8 10-14.5V9L16 4z" stroke="#7E9470" stroke-width="1.8" stroke-linejoin="round"/>
-            <path d="M11 16l3.5 3.5L21 12" stroke="#7E9470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+          <svg viewBox="0 0 32 32" fill="none" width="26" height="26"><path d="M16 4L6 9v6.5c0 6.5 4.2 12.6 10 14.5 5.8-1.9 10-8 10-14.5V9L16 4z" stroke="#7E9470" stroke-width="1.8" stroke-linejoin="round"/><path d="M11 16l3.5 3.5L21 12" stroke="#7E9470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h3 class="adv__title">Гарантия 2 года</h3>
         <p class="adv__text">Все работы выполняем с гарантией 2 года. Любые замечания устраняем бесплатно — письменное обязательство в договоре.</p>
       </div>
       <div class="adv">
         <div class="adv__icon">
-          <svg viewBox="0 0 32 32" fill="none" width="26" height="26">
-            <rect x="7" y="7" width="18" height="18" rx="3" stroke="#7E9470" stroke-width="1.8"/>
-            <path d="M11 16l3 3 7-7" stroke="#7E9470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+          <svg viewBox="0 0 32 32" fill="none" width="26" height="26"><rect x="7" y="7" width="18" height="18" rx="3" stroke="#7E9470" stroke-width="1.8"/><path d="M11 16l3 3 7-7" stroke="#7E9470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h3 class="adv__title">Работаем по договору</h3>
         <p class="adv__text">Фиксируем объём работ, сроки и стоимость в договоре. Никаких сюрпризов — только то, что согласовано.</p>
       </div>
       <div class="adv">
         <div class="adv__icon">
-          <svg viewBox="0 0 32 32" fill="none" width="26" height="26">
-            <circle cx="16" cy="16" r="10" stroke="#7E9470" stroke-width="1.8"/>
-            <path d="M16 11v5.5l3.5 2" stroke="#7E9470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+          <svg viewBox="0 0 32 32" fill="none" width="26" height="26"><circle cx="16" cy="16" r="10" stroke="#7E9470" stroke-width="1.8"/><path d="M16 11v5.5l3.5 2" stroke="#7E9470" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h3 class="adv__title">Бесплатная консультация</h3>
         <p class="adv__text">Проконсультируем по всем вопросам, оценим объём работ и составим подробную смету с учётом всех пожеланий.</p>
       </div>
       <div class="adv">
         <div class="adv__icon">
-          <svg viewBox="0 0 32 32" fill="none" width="26" height="26">
-            <circle cx="16" cy="11" r="5" stroke="#7E9470" stroke-width="1.8"/>
-            <path d="M6 27c0-5.5 4.5-9 10-9s10 3.5 10 9" stroke="#7E9470" stroke-width="1.8" stroke-linecap="round"/>
-          </svg>
+          <svg viewBox="0 0 32 32" fill="none" width="26" height="26"><circle cx="16" cy="11" r="5" stroke="#7E9470" stroke-width="1.8"/><path d="M6 27c0-5.5 4.5-9 10-9s10 3.5 10 9" stroke="#7E9470" stroke-width="1.8" stroke-linecap="round"/></svg>
         </div>
         <h3 class="adv__title">Личный контроль</h3>
         <p class="adv__text">Вы общаетесь напрямую с Иваном — человеком, который лично отвечает за выполнение заказа на каждом этапе.</p>
       </div>
       <div class="adv">
         <div class="adv__icon">
-          <svg viewBox="0 0 32 32" fill="none" width="26" height="26">
-            <path d="M6 26V16l10-10 10 10v10H21v-7h-10v7H6z" stroke="#7E9470" stroke-width="1.8" stroke-linejoin="round"/>
-          </svg>
+          <svg viewBox="0 0 32 32" fill="none" width="26" height="26"><path d="M6 26V16l10-10 10 10v10H21v-7h-10v7H6z" stroke="#7E9470" stroke-width="1.8" stroke-linejoin="round"/></svg>
         </div>
         <h3 class="adv__title">Комплексный подход</h3>
         <p class="adv__text">Берёмся за весь объём: плитка, памятник, ограда, мраморная крошка, спил деревьев. Один договор — полная готовность.</p>
       </div>
       <div class="adv">
         <div class="adv__icon">
-          <svg viewBox="0 0 32 32" fill="none" width="26" height="26">
-            <path d="M10 22c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#7E9470" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M16 6v4M6 12l2.8 2.8M26 12l-2.8 2.8" stroke="#7E9470" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M8 26h16" stroke="#7E9470" stroke-width="1.8" stroke-linecap="round"/>
-          </svg>
+          <svg viewBox="0 0 32 32" fill="none" width="26" height="26"><path d="M10 22c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#7E9470" stroke-width="1.8" stroke-linecap="round"/><path d="M16 6v4M6 12l2.8 2.8M26 12l-2.8 2.8" stroke="#7E9470" stroke-width="1.8" stroke-linecap="round"/><path d="M8 26h16" stroke="#7E9470" stroke-width="1.8" stroke-linecap="round"/></svg>
         </div>
         <h3 class="adv__title">Квалифицированные специалисты</h3>
         <p class="adv__text">Опытная бригада с навыками укладки, монтажа памятников и ландшафтных работ. Каждый знает своё дело.</p>
@@ -201,7 +236,7 @@
 <!-- ===== УСЛУГИ ===== -->
 <section class="services" id="services">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div class="section-label">Что мы делаем</div>
       <h2 class="section-title">Полный цикл благоустройства</h2>
     </div>
@@ -258,12 +293,12 @@
 <!-- ===== ПРАЙС-ТАБЛИЦА ===== -->
 <section class="price" id="price">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div class="section-label">Стоимость</div>
       <h2 class="section-title">Прозрачные цены без доплат</h2>
     </div>
     <div class="price__cols">
-      <div class="price__block">
+      <div class="price__block reveal">
         <div class="price__block-title">Укладка и благоустройство</div>
         <table class="price__table">
           <thead>
@@ -279,7 +314,7 @@
           </tbody>
         </table>
       </div>
-      <div class="price__block">
+      <div class="price__block reveal">
         <div class="price__block-title">Памятники под заказ</div>
         <table class="price__table">
           <thead>
@@ -306,7 +341,7 @@
 <!-- ===== ПРОЦЕСС ===== -->
 <section class="process" id="process">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div class="section-label">Как мы работаем</div>
       <h2 class="section-title">5 шагов от звонка до готового объекта</h2>
     </div>
@@ -353,7 +388,7 @@
 <!-- ===== ПРИМЕРЫ РАБОТ ===== -->
 <section class="works" id="works">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div class="section-label">Наши работы</div>
       <h2 class="section-title">Примеры выполненных объектов</h2>
     </div>
@@ -362,6 +397,7 @@
         <div class="work-card__img">
           <img src="work1.jpg" alt="Комплексное благоустройство — белая плитка, памятник, мраморная крошка" loading="lazy">
           <span class="work-card__tag">Барнаул</span>
+          <div class="work-card__overlay">Комплексное благоустройство</div>
         </div>
         <div class="work-card__body">
           <div class="work-card__title">Комплексное благоустройство</div>
@@ -372,6 +408,7 @@
         <div class="work-card__img">
           <img src="work2.jpg" alt="Установка памятника с кованой оградой" loading="lazy">
           <span class="work-card__tag">Алтайский край</span>
+          <div class="work-card__overlay">Памятник и кованая ограда</div>
         </div>
         <div class="work-card__body">
           <div class="work-card__title">Памятник и кованая ограда</div>
@@ -382,6 +419,7 @@
         <div class="work-card__img">
           <img src="work3.jpg" alt="Гранитная и тротуарная плитка — два участка" loading="lazy">
           <span class="work-card__tag">Барнаул</span>
+          <div class="work-card__overlay">Укладка гранитной плитки</div>
         </div>
         <div class="work-card__body">
           <div class="work-card__title">Укладка гранитной плитки</div>
@@ -392,6 +430,7 @@
         <div class="work-card__img">
           <img src="work4.jpg" alt="Чёрная гранитная плитка с кованой оградой" loading="lazy">
           <span class="work-card__tag">Барнаул</span>
+          <div class="work-card__overlay">Гранит и кованая ограда</div>
         </div>
         <div class="work-card__body">
           <div class="work-card__title">Гранит и кованая ограда</div>
@@ -402,6 +441,7 @@
         <div class="work-card__img">
           <img src="work5.jpg" alt="Укладка полированной гранитной плитки" loading="lazy">
           <span class="work-card__tag">Барнаул</span>
+          <div class="work-card__overlay">Укладка полированного гранита</div>
         </div>
         <div class="work-card__body">
           <div class="work-card__title">Укладка полированного гранита</div>
@@ -412,6 +452,7 @@
         <div class="work-card__img">
           <img src="work6.jpg" alt="Пример выполненной работы" loading="lazy">
           <span class="work-card__tag">Барнаул</span>
+          <div class="work-card__overlay">Благоустройство под ключ</div>
         </div>
         <div class="work-card__body">
           <div class="work-card__title">Благоустройство под ключ</div>
@@ -419,7 +460,7 @@
         </div>
       </div>
     </div>
-    <div class="works__cta">
+    <div class="works__cta reveal">
       <p>Готовы обсудить ваш объект? Звоните или оставляйте заявку — приедем, посмотрим, предложим варианты.</p>
       <a href="#contact" class="btn btn--accent">Получить консультацию</a>
     </div>
@@ -429,7 +470,7 @@
 <!-- ===== FAQ ===== -->
 <section class="faq" id="faq">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div class="section-label">Частые вопросы</div>
       <h2 class="section-title">Ответы на главные вопросы</h2>
     </div>
@@ -465,7 +506,7 @@
 <!-- ===== ФОРМА + КАРТА ===== -->
 <section class="contact-section" id="contact">
   <div class="container">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div class="section-label">Записаться</div>
       <h2 class="section-title">Получите бесплатную консультацию</h2>
       <p class="section-sub">Оставьте заявку — Иван перезвонит в течение часа и ответит на все вопросы</p>
