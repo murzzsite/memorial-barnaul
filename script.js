@@ -9,6 +9,17 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  // Active nav link based on current page
+  const currentFile = location.pathname.split('/').filter(Boolean).pop() || 'index.html';
+  document.querySelectorAll('.nav a[href]').forEach(a => {
+    const href = a.getAttribute('href');
+    if (!href || href.startsWith('#')) return;
+    const linkFile = href.split('/').pop();
+    if (linkFile === currentFile || (linkFile === 'index.html' && (currentFile === '' || currentFile.endsWith('.github.io')))) {
+      a.classList.add('active');
+    }
+  });
+
   const burger = document.getElementById('burger');
   const nav = document.getElementById('nav');
   burger?.addEventListener('click', () => {
