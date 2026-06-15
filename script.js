@@ -63,6 +63,15 @@
       return;
     }
 
+    const agreeBox = form.querySelector('[name="agree_pd"]');
+    if (agreeBox && !agreeBox.checked) {
+      const box = agreeBox.closest('.form__check').querySelector('.form__check-box');
+      box.classList.add('form__check-box--error');
+      box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(() => box.classList.remove('form__check-box--error'), 3500);
+      return;
+    }
+
     btn.disabled = true;
     btn.textContent = 'Отправляем...';
 

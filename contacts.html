@@ -121,7 +121,25 @@
             </select>
           </div>
           <button type="submit" class="btn btn--accent btn--full">Получить бесплатную консультацию</button>
-          <p class="form__agree">Нажимая кнопку, вы соглашаетесь с <a href="privacy-consent.html" target="_blank">политикой конфиденциальности</a></p>
+
+          <div class="form__checks">
+            <label class="form__check form__check--required">
+              <input type="checkbox" name="agree_pd" id="agree_pd">
+              <span class="form__check-box"></span>
+              <span class="form__check-text">Я ознакомился(-ась) и принимаю
+                <a href="privacy-consent.html" target="_blank">согласие на обработку персональных данных</a>,
+                <a href="privacy-policy.html" target="_blank">политику конфиденциальности</a>,
+                <a href="public-offer.html" target="_blank">публичную оферту</a>
+                и <a href="cookie-policy.html" target="_blank">политику использования cookie</a>.
+                <span class="form__check-req">*&nbsp;обязательно</span>
+              </span>
+            </label>
+            <label class="form__check">
+              <input type="checkbox" name="agree_marketing" id="agree_marketing">
+              <span class="form__check-box"></span>
+              <span class="form__check-text">Я согласен(-на) получать информационные и рекламные рассылки об акциях и специальных предложениях. <span class="form__check-opt">необязательно</span></span>
+            </label>
+          </div>
         </form>
       </div>
       <div class="map-wrap">

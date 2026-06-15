@@ -557,6 +557,36 @@ a.price2__contact-item:hover { text-decoration: underline; }
 .legal-content strong { color: var(--text); }
 .legal-content a { color: var(--accent); text-decoration: underline; }
 
+/* ===== FORM CHECKBOXES ===== */
+.form__checks { display: flex; flex-direction: column; gap: 14px; margin-top: 4px; }
+.form__check { display: flex; align-items: flex-start; gap: 12px; cursor: pointer; user-select: none; }
+.form__check input[type="checkbox"] { position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none; }
+.form__check-box {
+  width: 20px; height: 20px; min-width: 20px;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  margin-top: 1px;
+  transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
+  display: flex; align-items: center; justify-content: center;
+  background: var(--surface);
+}
+.form__check:hover .form__check-box { border-color: var(--accent); }
+.form__check input:checked ~ .form__check-box { background: var(--accent); border-color: var(--accent); }
+.form__check input:checked ~ .form__check-box::after {
+  content: '';
+  display: block;
+  width: 5px; height: 9px;
+  border: 2px solid #fff;
+  border-top: none; border-left: none;
+  transform: rotate(45deg) translateY(-1px);
+}
+.form__check-box--error { border-color: #d94f4f !important; box-shadow: 0 0 0 3px rgba(217,79,79,.15); }
+.form__check-text { font-size: 13px; color: var(--muted); line-height: 1.6; }
+.form__check-text a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; transition: opacity var(--transition); }
+.form__check-text a:hover { opacity: .75; }
+.form__check-req { display: inline-block; font-size: 11px; font-weight: 600; color: #d94f4f; margin-left: 4px; }
+.form__check-opt { display: inline-block; font-size: 11px; color: var(--muted); opacity: .65; margin-left: 2px; }
+
 /* ===== ACTIVE NAV LINK ===== */
 .nav a.active { color: var(--accent-dark); font-weight: 600; }
 .nav a.active::after { transform: scaleX(1); }
